@@ -9,24 +9,27 @@ let am_pm = document.querySelector("#ampm");
 setInterval(function () {
 
   let date = new Date();
-   if (date.getHours() >= 0 && date.getHours() <= 9)
+  if (date.getHours() >= 0 && date.getHours() <= 9)
     hours.textContent = "0" + date.getHours();
-  else
-    hours.textContent = date.getHours();
 
 
-  if (date.getHours() >= 12)
+
+  if (date.getHours() >= 12) {
+
+    hours.textContent = date.getHours() - 12;
     am_pm.textContent = "PM";
+  }
+
   else
     am_pm.textContent = "AM";
 
-  
+
   if (date.getMinutes() >= 0 && date.getMinutes() <= 9)
     minutes.textContent = "0" + date.getMinutes();
   else
     minutes.textContent = date.getMinutes();
 
-  
+
   if (date.getSeconds() >= 0 && date.getSeconds() <= 9)
     seconds.textContent = "0" + date.getSeconds();
   else
