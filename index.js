@@ -11,7 +11,8 @@ setInterval(function () {
   let date = new Date();
   if (date.getHours() >= 0 && date.getHours() <= 9)
     hours.textContent = "0" + date.getHours();
-
+else
+  hours.textContent=date.getHours();
 
 
   if (date.getHours() >= 12) {
