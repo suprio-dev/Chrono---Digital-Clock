@@ -25,8 +25,12 @@ setInterval(function () {
     am_pm.textContent = "PM";
   }
 
-  else
+  else {
+    if (date.getHours() === 0)
+      hours.textContent = date.getHours() + 12;
     am_pm.textContent = "AM";
+  }
+
 
 
   if (date.getMinutes() >= 0 && date.getMinutes() <= 9)
