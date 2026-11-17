@@ -12,7 +12,7 @@ Chrono is a responsive digital clock that displays the **current time, date, day
 
 - Real-time digital clock
 - Live hours, minutes, and seconds
-- AM/PM format
+- 12-hour time format with AM/PM
 - Current date display
 - Day and month display
 - Automatic time updates
